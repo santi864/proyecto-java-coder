@@ -1,0 +1,37 @@
+
+GET http://localhost:5000/client
+
+###
+
+
+POST http://localhost:5000/client
+Content-Type: application/json
+
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "name": "Test Client",
+  "dni": "12345678",
+  "email": "test@example.com"
+}
+
+###
+
+GET http://localhost:5000/client/f47ac10b-58cc-4372-a567-0e02b2c3d479
+
+###
+
+
+PUT http://localhost:5000/client/7419df1a-6125-4322-8475-e3cf972fe3ba
+Content-Type: application/json
+
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "name": "Updated Client",
+  "dni": "12345678",
+  "email": "updated@example.com"
+}
+###
+
+DELETE http://localhost:5000/client/7419df1a-6125-4322-8475-e3cf972fe3ba
+###
+
